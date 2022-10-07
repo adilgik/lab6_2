@@ -1,8 +1,8 @@
-FROM node:latest
+FROM node:alpine
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY package*.json /usr/src/app
+COPY package*.json /app/
 
 RUN npm install
 
